@@ -1,0 +1,48 @@
+	
+    
+    //loads chunks in area - came from ChunkLoader.cs
+
+
+
+    //sets how many chunks to load the next frame - caem from ChunkLoader.cs
+    int desiredFramerate = 60;
+    public void SetLoadSpeed(){
+		if(ShowFPS.fps < desiredFramerate + 20)
+			numChunksToLoad -= 1;
+		else
+			numChunksToLoad += 1;
+		if(numChunksToLoad < 0)
+			numChunksToLoad = 0;
+		else if(numChunksToLoad > 4)
+			numChunksToLoad = 4;
+	}
+
+
+    //loads closest chunks at l chunks per frame
+	public void LoadClosestChunks(){
+		chunkMidPos = GetChunkPos(midPosition);
+		
+		//select chunks
+		vector3Int[] closest = new vector3Int[numChunksToLoad+1];
+		int l = 0;
+		for(int i = 0; i < chunksToBeLoaded.Length; i++){//chunksToBeLoaded is sorted from closest to furthest
+			vector3Int pos = chunksToBeLoaded[i] + chunkMidPos;
+			//skip over negative chunks
+			if(pos.x < 0 || pos.y < 0 || pos.z < 0)
+				continue;
+			if(!chunks.ContainsKey(pos)){
+				closest[l] = chunksToBeLoaded[i];
+				l++;
+			}
+			else if(!chunks[pos].loaded){
+				closest[l] = chunksToBeLoaded[i];
+				l++;
+			}
+			if(l >= numChunksToLoad) break;
+		}
+		//load chunks
+		for(int i = 0; i < l; i++){
+			if(!unloadingChunks)
+				LoadChunk(closest[i] + chunkMidPos);
+		}
+	}

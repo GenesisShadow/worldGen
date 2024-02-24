@@ -1,0 +1,517 @@
+/**************************************************/
+/*                                                */
+/*    blueish grayish color theme for Unity Editor  */
+/*                                                */
+/*                    by Mauri                    */
+/*                                                */
+/**************************************************/
+  
+.BoldTextField
+{
+    background-color: #ff0000;
+}
+ 
+.ObjectField
+{
+    background-color: #ff0000;
+}
+
+:root {
+    --unity-colors-input_field-background: #1E2430;
+    --unity-colors-tab-background: #3B4252;
+    --unity-colors-default-background: #3B4252;
+    --unity-colors-button-background: #3B4252;
+    --unity-colors-button-background-hover: #4C566A;
+    --unity-colors-dropdown-background: #3B4252;
+    --unity-colors-popup-background: #3B4252;
+    --unity-colors-tab-background-checked: #3B4252;
+    --unity-colors-toolbar-background: #3B4252;
+
+    --unity-colors-toolbar_button-background: #3B4252;
+    --unity-colors-toolbar_button-background-checked: #4C566A;
+
+    --unity-colors-app_toolbar_button-background-checked: #4C566A;
+
+    --unity-colors-highlight-background: #4C566A;
+
+    --unity-colors-alternated_rows-background: #3B4252;
+}
+
+ 
+/*****************************************/
+/*    Editor Top Toolbar & Button Styling  */
+/*****************************************/
+ 
+/* Tool Handle Position ... */
+.AppToolbarButtonLeft {
+    background-color: #3B4252;
+    border-color: #2B3242;
+}
+.AppToolbarButtonLeft:hover {
+    background-color: #4C566A;
+}
+.AppToolbarButtonLeft:active {
+    background-color: #4C566A;
+    color: #000000;
+}
+ 
+/* ... and Rotation */
+.AppToolbarButtonRight {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+}
+.AppToolbarButtonRight:hover {
+    background-color: #4C566A;
+}
+.AppToolbarButtonRight:active {
+    background-color: #4C566A;
+    color: #000000;
+}
+ 
+/* Grid Snapping and Cloud button */
+.AppCommand {
+    background-color: #3B4252;
+    border-color: #2B3242;
+}
+.AppCommand:hover {
+    background-color: #4C566A;
+}
+ 
+/* Hand Tool and Play button */
+.AppCommandLeft {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+}
+.AppCommandLeft:hover {
+    background-color: #4C566A;
+}
+.AppCommandLeft:active {
+    background-color: #4C566A;
+}
+/* While in Play mode, the Play button has a different color assigned - here's a fancy red one */
+.AppCommandLeftOn {
+    background-color: #81A1C1;
+    border-color: #4b4e58;
+}
+.AppCommandLeftOn:hover {
+    background-color: #88C0D0;
+}
+.AppCommandLeftOn:active {
+    background-color: #88C0D0;
+}
+ 
+/* Move Tool, Rotate Tool, ... and Pause button */
+.AppCommandMid {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+}
+.AppCommandMid:hover {
+    background-color: #4C566A;
+}
+.AppCommandMid:active {
+    background-color: #4C566A;
+}
+ 
+/* Available Custom Editor Tools and Step button (the one next to the Pause button) */
+.AppCommandRight {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+}
+.AppCommandRight:hover {
+    background-color: #4C566A;
+}
+.AppCommandRight:active {
+    background-color: #4C566A;
+}
+ 
+ 
+/********************************************************/
+/*  Misc Elements Styling (Dropdowns, Buttons, etc...)  */
+/********************************************************/
+ 
+/* Top Account, Layers & Layout buttons */
+.DropDown {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+}
+.DropDown:hover {
+    background-color: #4C566A;
+}
+ 
+.Foldout:active {
+    background-color: #4C566A;
+    color: #ffffff;
+}
+ 
+/* Used for some dropdown menus - like the ones in the Lighting Settings */
+.MiniPullDown {
+    background-color: #3B4252;
+    border-color: #2B3242;
+    color: #ffffff;
+}
+.MiniPullDown:hover {
+    background-color: #4C566A;
+    color: #000000;
+}
+ 
+/* Used for some other dropdown menus */
+.MiniPopup {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+    color: #ffffff;
+}
+.MiniPopup:hover {
+    background-color: #4C566A;
+    color: #000000;
+}
+ 
+/* Seems to be only used for the Collab dropdown */
+.OffsetDropDown {
+    background-color: #3B4252;
+    border-color: #2B3242;
+}
+.OffsetDropDown:hover {
+    background-color: #4C566A;
+}
+ 
+.dockarea {
+    /*background-color: #8e909a;*/
+    background-color: #3B4252;
+}
+.dockHeader {
+    background-color: #4b5058;
+}
+ 
+.dragtab-first {
+    background-color: #3B4252;
+    border-color: transparent;
+}
+.dragtab-first:hover {
+    background-color: #4C566A;
+}
+.dragtab-first:active {
+    background-color: #4C566A;
+}
+ 
+.dragtab {
+    background-color: #3B4252;
+    border-color: transparent;
+}
+.dragtab:hover {
+    background-color: #4C566A;
+}
+.dragtab:active {
+    background-color: #4C566A;
+}
+.dragtab:focus {
+    background-color: #4C566A;
+}
+
+ 
+/* Both colors most of the text in Windows, Inspectors, etc */
+.BoldLabel {
+    color: #ffffff;
+}
+.ControlLabel {
+    color: #ffffff;
+}
+ 
+/* Used for clickable external links */
+.LinkLabel {
+    color: #96d7ff;
+}
+ 
+.ProjectBrowserTopBarBg {
+    background-color: #3B4252;
+    color: #ff0;
+}
+/* Asset file names */
+.ProjectBrowserGridLabel {
+    color: #ffffff;
+}
+ 
+/* Used for the "Auto Generate Lighting On" etc text */
+#ProgressBarText {
+    color: #ffffff;
+}
+ 
+/* Used by the wide border in the Hierarchy and its hover effect */
+.WhiteBackground {
+    background-color: #b8c1d9; /* 5a5e6b gives a nice color, but makes text hard to read */
+}
+ 
+/* Used by the Build Settings window and likely other windows */
+.hostview {
+    background-color: #6c717f;
+}
+ 
+ 
+ 
+/*************************************/
+/*  Project Settings Window Styling  */
+/*************************************/
+ 
+#SettingsHeader {
+    color: #ffffff;
+}
+ 
+#SettingsListItem {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.AppToolbar
+{
+    background-color: #2E3440;
+}
+ 
+.AppCommandLeft
+{
+    background-color: #3B4252;
+}
+ 
+.AppCommandMid
+{
+    background-color: #3B4252;
+}
+ 
+.AppCommandRight
+{
+    background-color: #3B4252;
+}
+ 
+.AppToolbarButtonLeft
+{
+    background-color: #3B4252;
+}
+ 
+.AppToolbarButtonRight
+{
+    background-color: #3B4252;
+}
+ 
+.DropDown
+{
+    background-color: #3B4252;
+}
+ 
+ 
+.dockHeader
+{
+    background-color: #2E3440;
+}
+ 
+.dockarea
+{
+    background-color: #2E3440;
+}
+ 
+.PaneOptions
+{
+    background-color: #2E3440;
+}
+ 
+.TabWindowBackground
+{
+    background-color: #2E3440;
+}
+ 
+.Toolbar
+{
+    background-color: #3B4252;
+}
+ 
+.SceneTopBarBg
+{
+    background-color: #2E3440;
+}
+ 
+.ScrollViewAlt
+{
+    background-color: #2E3440;
+}
+ 
+.FoldoutHeader
+{
+    background-color: #2E3440;
+}
+
+.unity-imgui-container{
+    background-color: #2E3440;
+}
+
+.ToolbarSearchTextFieldPopup
+{
+    background-color: #3B4252;
+}
+ 
+.IN-BigTitle
+{
+    background-color: #3B4252;
+}
+ 
+.IN-Title
+{
+    background-color: #1e2430;
+}
+ 
+.TabWindowToolbarBackground
+{
+    background-color: #1e2430;
+}
+ 
+.IconButton
+{
+    background-color: #3B4252;
+ 
+}
+ 
+.toolbarbutton
+{
+    background-color: #3B4252;
+}
+ 
+.ToolbarPopup
+{
+    background-color: #3B4252;
+}
+ 
+.ToolbarPopupLeft
+{
+    background-color: #3B4252;
+}
+ 
+.ToolbarSearch
+{
+    background-color: #3B4252;
+}
+ 
+.Label
+{
+    background-color: #3B4252;
+}
+ 
+.ProjectBrowserBottomBarBg
+{
+    background-color: #3B4252;
+}
+ 
+.BoldTextField
+{
+    background-color: #1e2430;
+}
+ 
+.ObjectField
+{
+    background-color: #1e2430;
+}
+ 
+.TV-Selection
+{
+    background-color: #3B4252;
+}
+
+
+
+/* Colors everything: Hierarchy, Inspectors, Console, ... */
+.ScrollViewAlt,
+.TabWindowBackground,
+.ProjectBrowserIconAreaBg {
+    background-color: #2E3440;
+}
+
+/* Both colors most of the text in Windows, Inspectors, etc */
+.BoldLabel {
+    color: #D8DEE9;
+}
+.ControlLabel {
+    color: #D8DEE9;
+}
+
+
+/********************************************************/
+/*  Misc Elements Styling (Dropdowns, Buttons, etc...)  */
+/********************************************************/
+
+/* Top Account, Layers & Layout buttons */
+.DropDown {
+    background-color: #3B4252;
+    border-color: #4b4e58;
+}
+.DropDown:hover {
+    background-color: #4C566A;
+}
+ 
+.Foldout:active {
+    background-color: #4C566A;
+    color: #D8DEE9;
+}
+ 
+/* Used for some dropdown menus - like the ones in the Lighting Settings */
+.MiniPullDown {
+    background-color: #3B4252;
+    border-color: #2B3242;
+    color: #D8DEE9;
+}
+.MiniPullDown:hover {
+    background-color: #4C566A;
+    color: #1e2430;
+}
+ 
+/* Used for some other dropdown menus */
+.MiniPopup {
+    background-color: #3B4252;
+    border-color: #2B3242;
+    color: #D8DEE9;
+}
+.MiniPopup:hover {
+    background-color: #4C566A;
+    color: #1e2430;
+}
+
+
+
+.dragtab-first {
+    background-color: #3B4252;
+    border-color: transparent;
+}
+.dragtab-first:hover {
+    background-color: #4C566A;
+}
+.dragtab-first:active {
+    background-color: #4C566A;
+}
+ 
+.dragtab {
+    background-color: #3B4252;
+    border-color: transparent;
+}
+.dragtab:hover {
+    background-color: #4C566A;
+}
+.dragtab:active {
+    background-color: #4C566A;
+}
+.dragtab:focus {
+    background-color: #4C566A;
+}
+
+
+
+
+
+
+
+
+
+
+
